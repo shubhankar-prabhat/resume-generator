@@ -1,0 +1,42 @@
+.Education {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.Education__header {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+
+.Education__addBtn {
+  visibility: hidden;
+  font-size: 1.1rem;
+}
+
+.Education__header:hover .Education__addBtn {
+  visibility: visible;
+}
+
+.Education__entry {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Education__entryBtns {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  gap: 5px;
+}
+
+.Education__entry:hover .Education__entryBtns {
+  display: flex;
+}

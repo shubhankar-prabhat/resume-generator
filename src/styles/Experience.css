@@ -1,0 +1,53 @@
+.Experience {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.Experience__header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+
+.Experience__addBtn {
+  visibility: hidden;
+  font-size: 1.1rem;
+}
+
+.Experience__header:hover .Experience__addBtn {
+  visibility: visible;
+}
+
+.Experience__entry {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Experience__entryBtns {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  gap: 5px;
+}
+
+.Experience__entry:hover .Experience__entryBtns {
+  display: flex;
+}
+
+.Experience__entryRow {
+  display: grid;
+  grid-template-columns: auto 150px;
+  column-gap: 20px;
+}
+
+.Experience__entryTimespan {
+  text-align: end;
+}

@@ -1,0 +1,78 @@
+.Contact {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.Contact__photoContainer {
+  position: relative;
+  height: 200px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.Contact__photo {
+  height: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.Contact__photoUpload {
+  display: none;
+  position: absolute;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: inherit;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.Contact__photoUpload > img {
+  height: 100%;
+}
+
+.Contact__photoContainer:hover .Contact__photo {
+  filter: blur(2px);
+}
+
+.Contact__photoContainer:hover .Contact__photoUpload {
+  display: block;
+}
+
+.Contact__info {
+  min-height: 200px;
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.1rem;
+}
+
+.Contact__entry {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.Contact__entry > img {
+  height: 24px;
+}
+
+.Contact__editBtn {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.1rem;
+}
+
+.Contact__info:hover .Contact__editBtn {
+  display: block;
+}

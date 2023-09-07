@@ -1,0 +1,26 @@
+.PersonalInfo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.PersonalInfo__fullName {
+  font-size: 2rem;
+}
+
+.PersonalInfo__profession {
+  text-transform: uppercase;
+}
+
+.PersonalInfo__editBtn {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.PersonalInfo:hover .PersonalInfo__editBtn {
+  display: block;
+}

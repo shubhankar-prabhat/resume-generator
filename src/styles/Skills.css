@@ -1,0 +1,51 @@
+.Skills {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.Skills__header {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+
+.Skills__addBtn {
+  visibility: hidden;
+  font-size: 1.1rem;
+}
+
+.Skills__header:hover .Skills__addBtn {
+  visibility: visible;
+}
+
+.Skills__list {
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.Skills__entry {
+  position: relative;
+}
+
+.Skills__entry:hover {
+  outline: 1px dotted #6495ed;
+}
+
+.Skills__entryBtns {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(25%, -50%);
+  flex-direction: column;
+  gap: 5px;
+}
+
+.Skills__entry:hover .Skills__entryBtns {
+  display: flex;
+  z-index: 100;
+}

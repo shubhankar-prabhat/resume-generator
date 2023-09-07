@@ -1,0 +1,22 @@
+.Profile {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.Profile__header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+
+.Profile__editBtn {
+  visibility: hidden;
+  font-size: 1.1rem;
+}
+
+.Profile__header:hover .Profile__editBtn {
+  visibility: visible;
+}
